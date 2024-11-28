@@ -11,6 +11,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        bgHeaderVeligo: '#25303b',
+        blueVeligo: '#64B5F6',
+        blueTextVeligo: '#0050AA',
       },
     },
   },
