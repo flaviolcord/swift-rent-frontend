@@ -7,10 +7,10 @@ import Image from 'next/image';
 import { imageUrls } from './imageUrls';
 
 const navItems = [
-  { name: 'Comment ça marche', href: '#how-it-works' },
-  { name: 'Abonnement', href: '#pricing' },
-  { name: 'À propos', href: '#about' },
-  { name: 'Aide et Contact', href: '#aide-contact' },
+  { name: "Comment ça marche", href: '#how-it-works' },
+  { name: "L'abonnement", href: '#pricing' },
+  { name: "À propos", href: '#about' },
+  { name: "Aide et Contact", href: '#aide-contact' },
 ];
 
 export default function Header() {
@@ -36,9 +36,8 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-white hover:text-blueVeligo px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  {item.name}
+                  className="text-white hover:text-blueVeligo px-3 py-2 rounded-md text-sm font-Lato"
+                > {item.name}
                 </Link>
               ))}
             </div>
@@ -57,7 +56,7 @@ export default function Header() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
             >
               <span className="sr-only">Open main menu</span>
               {isOpen ? (
@@ -76,7 +75,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
+                className="text-white hover:text-blueVeligo block px-3 py-2 rounded-md text-base font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
@@ -88,11 +87,9 @@ export default function Header() {
               <button className="p-1 rounded-full text-gray-600 hover:text-gray-900 focus:outline-none">
                 <Globe className="h-6 w-6" />
               </button>
-              <button className="ml-auto bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-md text-sm font-medium">
-                Log in
-              </button>
-              <button className="ml-3 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm font-medium">
-                Sign up
+              <button className="ml-3 bg-white text-blueTextVeligo hover:text-blueVeligo  px-4 py-2 rounded-md text-sm font-medium flex items-center">
+                <User className="w-4 h-4 mr-2" />
+                Mon space
               </button>
             </div>
           </div>

@@ -6,6 +6,10 @@ const nextConfig: NextConfig = {
     domains: [
       "www.canyon.com",
       "www.veligo-location.fr",
+      "www.coboc.biz",
+      "static.latribune.fr",
+      "images.frandroid.com",
+      "mon-espace.veligo-location.fr",
     ]
   }
 };
